@@ -1,49 +1,150 @@
-index.html
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de João Silva</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio de Samuel</title>
 </head>
-<body>
-    <div class="container">
-        <div class="profile-card">
-            <div class="profile-image">
-                <img src="perfil.jpg" alt="Imagem de Perfil" class="img-perfil">
-            </div>
-            <div class="profile-info">
-                <h1>João Silva</h1>
-                <p class="idade">Idade: 16 anos</p>
-                <p class="bio">Sou estudante apaixonado por tecnologia, programação, jogos e música! Estou sempre em busca de aprender novas habilidades e me desafiar em novos projetos.</p>
-                <div class="social-links">
-                    <a href="https://github.com/joaosilva" target="_blank" class="social-icon">GitHub</a>
-                    <a href="https://www.linkedin.com/in/joaosilva/" target="_blank" class="social-icon">LinkedIn</a>
-                </div>
-            </div>
-        </div>
 
-        <div class="portfolio">
-            <h2>Meus Projetos</h2>
-            <div class="project-list">
-                <div class="project-card">
-                    <h3>Projeto 1: Calculadora</h3>
-                    <p>Uma calculadora simples feita com HTML, CSS e JavaScript.</p>
-                    <a href="#" class="project-link">Ver mais</a>
+<body>
+
+    <header class="container text-center py-5">
+        <p class="lead mt-3">Olá, eu sou o Samuel</p>
+        <h1 class="display-4">Professor de Música</h1>
+        <p class="col-md-8 mx-auto">
+            Olá! Me chamo Samuel Andolfato, sou professor de música no Instituto SIM e estagiário na Copel.
+Tenho paixão pela música e venho trilhando um caminho que une ensino, prática e planos para o futuro. 
+        </p>
+        <p class="mt-4"><strong>Minhas principais habilidades:</strong></p>
+        <div>
+            <span class="badge bg-primary">Saxofone</span>
+            <span class="badge bg-success">Teclado</span>
+            <span class="badge bg-danger">Música</span>
+            <span class="badge bg-info text-dark">Violão</span>
+            <span class="badge bg-warning text-dark">melodia</span>
+            <span class="badge bg-secondary">poesia em som</span>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <h2 class="text-center mb-4">Um Pouco de Mim</h2>
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Professor de Saxofone</h5>
+                        <p class="card-text">Descubra um pouco da minha história e trajetória com o instrumento. </p>
+                        <button type="button" class="btn btn-link mt-auto" data-bs-toggle="modal" data-bs-target="#modal1">
+                            Veja os detalhes
+                        </button>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <h3>Projeto 2: Site Pessoal</h3>
-                    <p>Site pessoal utilizando HTML e CSS, com design responsivo.</p>
-                    <a href="#" class="project-link">Ver mais</a>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Minha história com a música</h5>
+                        <p class="card-text">Acesse para ver a minha história com a música e minha trajetória do hobby até o profissionalismo.</p>
+                        <button type="button" class="btn btn-link mt-auto" data-bs-toggle="modal" data-bs-target="#modal2">
+                            Veja os detalhes
+                        </button>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <h3>Projeto 3: Jogo da Forca</h3>
-                    <p>Jogo simples de forca utilizando JavaScript.</p>
-                    <a href="#" class="project-link">Ver mais</a>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Entre em contato</h5>
+                        <p class="card-text">Meus contatos para marcar sua aula</p>
+                        <button type="button" class="btn btn-link mt-auto" data-bs-toggle="modal" data-bs-target="#modal3">
+                            Veja os detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal1Label">Professor de Saxofone</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Sou professor de saxofone e apaixonado pelo que faço. A música nem sempre foi parte essencial da minha vida, mas com o tempo ensinar saxofone é a forma que encontrei de compartilhar essa paixão que acabei desenvolvendo com outras pessoas. Acredito que cada aluno tem um som único dentro de si — e minha missão é ajudar a descobrir e desenvolver esse som com técnica, sensibilidade e expressão.</p>
+                    <p>Minhas aulas combinam teoria, prática e muito incentivo à criatividade, sempre adaptadas ao ritmo e aos objetivos de cada estudante. Ensinar saxofone não é apenas um trabalho para mim: é uma vocação, uma alegria diária e uma troca constante de aprendizado e inspiração.</p>
+                    <p>A cada aula, procuro mostrar que aprender música vai muito além das notas — é sobre emoção, disciplina e autoconhecimento.</p>
+                </div>
+                <div class="modal-footer">
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal2Label">Minha história com a música</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Minha trajetória musical começou aos 9 anos, quando comecei a fazer aulas de música na igreja. Naquela época, confesso que não gostava muito — eu ia mais por insistência dos meus pais do que por vontade própria. Mas, sem saber, aqueles primeiros contatos estavam plantando uma semente que mudaria minha vida.</p>
+                    <p>Com o tempo, acabei parando as aulas, mas cerca de um ano depois decidi voltar. E dessa vez, algo mudou completamente: me apaixonei pela música de verdade e nunca mais abandonei. Tocando na orquestra da igreja, fui descobrindo a beleza de fazer parte de algo maior, de harmonizar sons e emoções junto com outras pessoas.</p>
+                    <p>Com os anos, minha curiosidade musical só cresceu. Comprei meu primeiro violão, depois um teclado, e comecei a aprender novos instrumentos, sempre buscando entender um pouco mais sobre o universo musical. Cada aprendizado, cada nota e cada instrumento me mostraram um novo jeito de sentir e expressar o que há dentro de mim.</p>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal3Label">Bot Moderador para Discord</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Se você deseja aprender saxofone, aprimorar sua técnica musical ou simplesmente conversar sobre essa arte que tanto amo, será um prazer falar com você! Estou sempre aberto a novos alunos, projetos e colaborações musicais.</p>
+                    <p>Você pode entrar em contato comigo para tirar dúvidas, agendar aulas ou saber mais sobre meu trabalho.</p>
+                    <ul>
+                        <li><strong>E-mail:</strong> samuel.andolfato@escola.pr.gov.br</li>
+                        <li><strong>WhatsApp:</strong> (42) 98872-2692</li>
+                        <li><strong>Instagram:</strong> @Sandolfato</li>
+
+                    <p>Vamos juntos transformar sons em emoção e fazer da música uma experiência única e inspiradora!</p>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container text-center py-5">
+        <h2 class="mb-3">Entre em Contato</h2>
+        <div>
+            <a href="https://github.com/sandolfato" target="_blank" class="text-dark fs-4 me-3"><i class="bi bi-github"></i></a>
+            <a href="https://linkedin.com/in/seu-usuario-aqui" target="_blank" class="text-dark fs-4 me-3"><i class="bi bi-linkedin"></i></a>
+            <a href="samuel.andolfato@escola.pr.gov.br" class="text-dark fs-4"><i class="bi bi-envelope-fill"></i></a>
+        </div>
+        <p class="my-4">&copy; 2025. Produzido por Samuel</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
+
